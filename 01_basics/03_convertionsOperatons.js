@@ -62,4 +62,4 @@ let str3 = str1+str2
 let gameCounter = 100
 gameCounter++ // 101 
 ++gameCounter //101
-// console.log(gameCounter); // 101
+// console.log(gameCounter); // 101  
