@@ -2,7 +2,7 @@
 
 // 7 types : String , Number , Boolean , null , undefined , Symbol , BigInt 
 
-const score = 100                      // typeof - strings
+const score = "100"                      // typeof - strings
 const scoreVal = 100.3                 // typeof - Number
 const isLoggedIn = true                // typeof - Boolean
 const outsideTemp = null               // typeof - null
