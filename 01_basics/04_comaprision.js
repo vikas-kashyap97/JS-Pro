@@ -8,3 +8,4 @@ console.log(null >= 0); // true
 // with undefined all values will come with - false
 
 
+ 
