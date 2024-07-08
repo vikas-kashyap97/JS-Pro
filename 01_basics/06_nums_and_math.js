@@ -36,4 +36,4 @@ console.log((Math.random()*10) + 1);         //6.25251425525
 
 const min = 10
 const max = 20
-console.log(Math.floor(Math.random()* (max- min + 1)) + min);  // 12 or 15 or 13 or 14 or... everytime you get the value between 10 to 20
+console.log(Math.floor(Math.random()* (max- min + 1)) + min);  // 12 or 15 or 13 or 14 or... everytime you get the value between 10 to 20 
