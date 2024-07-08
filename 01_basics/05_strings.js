@@ -31,7 +31,7 @@ const url = "https://vikas.com/vikas%20kashyap"
 console.log(url.replace('%20', '-'));                                        // https://vikas.com/vikas-kashyap     
 
 const name1 = "Vikas-kashyap-Akash kashyap-"
-console.log(name1.split('-'));                                               // 'Vikas' 'kashyap' 'Akash' 'kashyap' 
+console.log(name1.split('-'));                                               // 'Vikas' 'kashyap' 'Akash' 'kashyap'  
   
 
 
