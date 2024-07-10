@@ -17,7 +17,7 @@ function sayMyName () {
 
 
 // addTwoNumbers(4, "5")                          // 45     (becuase js will be considered both of them as a string)
-// addTwoNumbers(4, "a")                          // 3a     (becuase js will be considered both of them as a string) 
+// addTwoNumbers(4, "a")                          // 4a     (becuase js will be considered both of them as a string) 
 
 
 function addTwoNumbers(num1, num2){               // (addTwoNumbers = reference , (num1, num2) = execute , 
