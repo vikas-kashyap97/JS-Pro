@@ -83,4 +83,4 @@ function returnthridValue(getArray){
     return getArray[2]
 }
 // console.log(returnthridValue(myNewArray));             // 55
-console.log(returnthridValue([8585,59,566,5,85,85]));     // 566  (you can add your own data)
+console.log(returnthridValue([8585,59,566,5,85,85]));     // 566  (you can add your own data) 
