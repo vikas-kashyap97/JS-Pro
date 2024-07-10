@@ -51,4 +51,4 @@ const users =[
  console.log(Object.keys(tinderUser));                   // { id: '123abc', name: 'Vikas', isLoggedIn: false, age: 22 } [ 'id', 'name', 'isLoggedIn', 'age' ]
  console.log(Object.values(tinderUser));                 // [ '123abc', 'Vikas', false, 22 ]
  console.log(Object.entries(tinderUser));                // [ [ 'id', '123abc' ],[ 'name', 'Vikas' ],[ 'isLoggedIn', false ],[ 'age', 22 ] ]
- console.log(tinderUser.hasOwnProperty('name'));         // true
+ console.log(tinderUser.hasOwnProperty('name'));         // true 
