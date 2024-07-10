@@ -17,7 +17,7 @@ const regularUser = {
         }
     }
 }
-console.log(regularUser.fullName.userFullName.fisrtName);         // Vikas
+// console.log(regularUser.fullName.userFullName.fisrtName);         // Vikas
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -27,7 +27,7 @@ const obj2 = {3: "a", 4: "b"}
 // const obj3 = Object.assign( {}, obj1, obj2 )                    // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 const obj3 = {...obj1, ...obj2}
-console.log(obj3);                                                 // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+// console.log(obj3);                                                 // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 const users =[
     {
@@ -45,10 +45,39 @@ const users =[
 ]
  users[1].email
 
- console.log(tinderUser);        // { id: '123abc', name: 'Vikas', isLoggedIn: false, age: 22 }
+//  console.log(tinderUser);        // { id: '123abc', name: 'Vikas', isLoggedIn: false, age: 22 }
  
  
- console.log(Object.keys(tinderUser));                   // { id: '123abc', name: 'Vikas', isLoggedIn: false, age: 22 } [ 'id', 'name', 'isLoggedIn', 'age' ]
- console.log(Object.values(tinderUser));                 // [ '123abc', 'Vikas', false, 22 ]
- console.log(Object.entries(tinderUser));                // [ [ 'id', '123abc' ],[ 'name', 'Vikas' ],[ 'isLoggedIn', false ],[ 'age', 22 ] ]
- console.log(tinderUser.hasOwnProperty('name'));         // true 
+//  console.log(Object.keys(tinderUser));                   // { id: '123abc', name: 'Vikas', isLoggedIn: false, age: 22 } [ 'id', 'name', 'isLoggedIn', 'age' ]
+//  console.log(Object.values(tinderUser));                 // [ '123abc', 'Vikas', false, 22 ]
+//  console.log(Object.entries(tinderUser));                // [ [ 'id', '123abc' ],[ 'name', 'Vikas' ],[ 'isLoggedIn', false ],[ 'age', 22 ] ]
+//  console.log(tinderUser.hasOwnProperty('name'));         // true 
+
+
+const course = {
+    coruseName: "Javascript",
+    coursePrice: 999,
+    courseTeacher: "Viaks"
+}
+ 
+// course.courseTeacher
+
+// const {courseTeacher} = course
+// console.log(courseTeacher);                               // Vikas
+
+const {courseTeacher : Teacher} = course                     // you can also change the name of your id's like courseTeacher to Teacher
+console.log(Teacher);                                        // Vikas
+
+// {
+//     "name": "Vikas",
+//     "corsename" : "Javascript",
+//     "price": "free"
+// }     
+
+// +++++++++ or +++++++++
+
+[
+    {},
+    {},
+    {}
+]
