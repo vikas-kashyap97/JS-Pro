@@ -1,4 +1,4 @@
-// for each
+// for each Note- for each function does not return the value 
 
 
 const coding = ["js", "java", "ruby", "python", "cpp"]
