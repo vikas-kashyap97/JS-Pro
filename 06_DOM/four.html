@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // Add anything in your body
+
+
+    function addLanguage(langName){
+        const li =  document.createElement("li")    // create a another li in which you want to add language
+        li.innerHTML = `${langName}`                // add inner HTML like "React"  
+        document.querySelector('.language').appendChild(li)  // Add this another li to the ul
+    }
+    addLanguage("React")    // Language name
+    addLanguage("Tailwind CSS")
+
+
+  // this is basic functionality to add anything in your body but it will travers all the time
+
+    function addOptiLanguage(langName){
+        const li =  document.createElement("li")  // create a another li in which you want to add language
+        li.appendChild(document.createTextNode(langName))  // insert a text node
+        document.querySelector('.language').appendChild(li) // append the li child with language
+    }
+    addOptiLanguage("Python")
+
+
+    // Edit
+
+
+
+    // 1st example
+     const secondLang = document.querySelector("li:nth-child(2)")
+     // secondLang.innerHTML = "Mojo"
+                   //or
+    const newli = document.createElement('li')  // create a another li in which you want to edit language
+    newli.textContent = "Mojo"     // add replacable content
+    secondLang.replaceWith(newli) // add it where you want to edit
+    
+    // 2nd example
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML= '<li>Typescript</li>';
+
+    
+    // remove
+
+    const lastLang = document.querySelector('li:last-child') // select li in which you want to delete language
+    lastLang.remove()
+
+</script>
+</html>
