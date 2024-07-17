@@ -5,7 +5,7 @@
 
 # Solution code 
 
-## project 1
+## project 1 Color changer
 
 ```javascript
 const buttons = document.querySelectorAll('.button');
