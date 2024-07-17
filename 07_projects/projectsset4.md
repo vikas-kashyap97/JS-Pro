@@ -7,7 +7,7 @@
 
 ## project 4 Guess the number
 
-```javasript
+```javascript
 
 let randomNumber = parseInt(Math.random() * 100 + 1);
 
