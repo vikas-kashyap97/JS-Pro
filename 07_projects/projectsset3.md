@@ -5,7 +5,7 @@
 
 # Solution code 
 
-## project 2 Digital clock
+## project 3 Digital clock
 
 ```javascript
 
