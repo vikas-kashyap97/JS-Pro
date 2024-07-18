@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Projects with Async JS Part-2</title>
+</head>
+<body>
+    <h1>Vikas kashyap</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+
+    // const sayDate = function(){
+    //     console.log("Vikas", Date.now());
+    // }
+    // setInterval(sayDate,1000)
+
+     // or (with third parameter)
+
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+    let chalu = setInterval(sayDate,1000, "Hi Vikas")
+
+   document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(chalu)
+    chalu = null
+   })
+   document.querySelector('#start').addEventListener('click', function() {
+        if (!chalu) {
+            chalu = setInterval(sayDate, 1000, "Hi Vikas");
+        }
+    });
+
+
+</script>
+</html>
