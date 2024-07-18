@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Projects with Async JS</title>
+</head>
+<body>
+    <h1>Vikas kashyap</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Vikas");
+    // }, 2000)
+
+    // or
+
+    
+const sayVikas = function() {      // Define a function named 'sayVikas'
+    console.log("Vikas");          //Vikas
+};
+
+setTimeout(sayVikas, 2000);
+
+const namechange = function() {
+    document.querySelector('h1').innerText = "Best JS Course by Me!";    // Change the inner text of the first <h1> element on the page to "Best JS Course by Me!"
+};
+
+const changeMe = setTimeout(namechange, 2000);
+
+document.querySelector('#stop').addEventListener('click', function() {
+    clearTimeout();                                                      // Attempt to stop the previously scheduled 'setTimeout' (but it's incomplete and will not work)
+    console.log("STOPPED");
+});
+
+
+
+</script>
+</html>
