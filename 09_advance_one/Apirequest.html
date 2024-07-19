@@ -13,20 +13,34 @@
 4	DONE	The operation is complete.
 </body>
 <script>
+    // Define the URL to send the request to
     const requestUrl = 'https://api.github.com/users/princeessjay';
-   const xhr = new XMLHttpRequest()
-   xhr.open('GET', requestUrl)
-
-   const ResponseText = 
-   xhr.onreadystatechange = function(){
-    console.log(xhr.readyState);
-    if (xhr.readyState === 4) {
-        const data = JSON.parse(this.responseText)
-        console.log(data);
-        console.log(data.followers);
-    }
-   }
-   
-   xhr.send()
+    
+    // Create a new XMLHttpRequest object
+    const xhr = new XMLHttpRequest();
+    
+    // Initialize the request with the GET method and the URL
+    xhr.open('GET', requestUrl);
+    
+    // Set up a function to handle the response as the request progresses
+    xhr.onreadystatechange = function() {
+        // Log the current state of the request
+        console.log(xhr.readyState);
+        
+        // Check if the request is complete
+        if (xhr.readyState === 4) {
+            // Parse the JSON response text into a JavaScript object
+            const data = JSON.parse(this.responseText);
+            
+            // Log the entire data object to the console
+            console.log(data);
+            
+            // Log the number of followers from the data object
+            console.log(data.followers);
+        }
+    };
+    
+    // Send the request
+    xhr.send();
 </script>
 </html>
