@@ -68,7 +68,7 @@ const teachingSupport = {
  }
  Teacher.__proto__ = User       // it also works outside of the object
  
-
+// Note - this is the old syntax and do not use , nowadays
 
  // modern syntax
  Object.setPrototypeOf(teachingSupport, Teacher)  // it is a modern syntax and use nowadays
