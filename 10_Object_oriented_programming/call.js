@@ -12,3 +12,6 @@ function createUsername(username,email,password){
 }
 const my = new createUsername("Vikas", "Vikas@google.com", "123")
 console.log(my);
+
+
+// if you want to inject the function's data into another function , use "fn.call(this,param)"
